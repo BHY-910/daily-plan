@@ -1,7 +1,7 @@
-name: 📅 每日计划与日记
+name: 📅 每日计划
 description: 记录今天的计划、待办和心情
-title: "[日记] YYYY-MM-DD"
-labels: ["日记", "每日计划"]
+title: "[时间] YYYY-MM-DD"
+labels: ["每日计划"]
 body:
   - type: markdown
     attributes:
@@ -39,15 +39,6 @@ body:
         - [ ] 早上9点开会
         - [ ] 回复邮件
         - [ ] 写周报
-    validations:
-      required: false
-
-  - type: textarea
-    id: diary
-    attributes:
-      label: 📖 今日日记
-      description: 随意记录今天的想法、感悟、趣事
-      placeholder: 今天发生了什么值得记录的事...
     validations:
       required: false
 
