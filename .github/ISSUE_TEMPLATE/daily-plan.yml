@@ -1,0 +1,61 @@
+name: 📅 每日计划与日记
+description: 记录今天的计划、待办和心情
+title: "[日记] YYYY-MM-DD"
+labels: ["日记", "每日计划"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ 新的一天开始啦！
+        填写下面的内容，记录你的今天。
+
+  - type: input
+    id: mood
+    attributes:
+      label: 😊 今日心情
+      description: 用一个词或表情形容今天的心情
+      placeholder: 例如：开心 / 一般 / 有点累 😴
+    validations:
+      required: false
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: 🎯 今日目标（1-3个）
+      description: 今天最重要的事是什么？
+      placeholder: |
+        1. 完成项目汇报PPT
+        2. 健身30分钟
+        3. 读20页书
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ 待办清单
+      description: 今天要做的事情列表
+      placeholder: |
+        - [ ] 早上9点开会
+        - [ ] 回复邮件
+        - [ ] 写周报
+    validations:
+      required: false
+
+  - type: textarea
+    id: diary
+    attributes:
+      label: 📖 今日日记
+      description: 随意记录今天的想法、感悟、趣事
+      placeholder: 今天发生了什么值得记录的事...
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 🌙 今日复盘
+      description: 今天的收获和反思
+      placeholder: 今天做得好的地方，需要改进的地方...
+    validations:
+      required: false
